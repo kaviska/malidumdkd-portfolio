@@ -1,0 +1,252 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0c0c0c;
+  --primary: #feb901;
+
+  --h1-lg: 65px;
+  --h1-md: 14px;
+  --h1-sm: 12px;
+
+  --p-lg: 25px;
+  --p-md: 16px;
+  --p-sm: 14px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #030714;
+    --foreground: #ededed;
+  }
+}
+.heading {
+  text-align: center;
+  -webkit-text-stroke: 2px white;
+  position: relative;
+  text-transform: uppercase;
+  color: #0a0a0a;
+  font-size: 120px;
+  letter-spacing: 1.2vw;
+  font-weight: 700;
+  text-shadow:
+    /* text stroke around letters */ 0 1px 0 #ffd633,
+    /* lighten(#feb901, 15%) */ -1px -1px 0 #ffd633,
+    /* lighten(#feb901, 15%) */ /* main 3d shadow */ -1px 0px 0 #ffc833,
+    /* lighten(#feb901, 6%) */ -2px 1px 0 #ffc833,
+    /* lighten(#feb901, 6%) */ -3px 2px 0 #ffbf33,
+    /* lighten(#feb901, 5%) */ -4px 3px 0 #ffb733,
+    /* lighten(#feb901, 4%) */ -5px 4px 0 #ffad33,
+    /* lighten(#feb901, 3%) */ -6px 5px 0 #ffa433,
+    /* lighten(#feb901, 2%) */ -7px 6px 0 #ff9a33,
+    /* lighten(#feb901, 1%) */ -8px 7px 0 #feb901,
+    /* base color */ -9px 8px 0 #e6a201,
+    /* darken(#feb901, 1%) */ -10px 9px 0 #cc8e01,
+    /* darken(#feb901, 2%) */ -11px 10px 0 #b27b01,
+    /* darken(#feb901, 3%) */ -12px 11px 0 #996801,
+    /* darken(#feb901, 4%) */ -13px 12px 0 #805501,
+    /* darken(#feb901, 5%) */ -14px 13px 0 #664301,
+    /* darken(#feb901, 6%) */ -15px 14px 0 #4d3201,
+    /* darken(#feb901, 7%) */ -16px 15px 0 #332100,
+    /* darken(#feb901, 8%) */ /* top right */ 0 -1px 1px white, 0 -2px 0px white,
+    /* bottom left corner */ -15px 14px 0px white, -16px 15px 0px white,
+    -17px 16px 0px white, -18px 17px 0px white, -2px -1px 0 white,
+    -3px 0px 0 white, /* top left corner */ -19px 15px 0 white,
+    -18px 14px 0 white, -17px 13px 0 white, -16px 12px 0 white,
+    -15px 11px 0 white, -14px 10px 0 white, -13px 9px 0 white, -12px 8px 0 white,
+    -11px 7px 0 white, -10px 6px 0 white, -9px 5px 0 white, -8px 4px 0 white,
+    -7px 3px 0 white, -6px 2px 0 white, -5px 1px 0 white, -4px 0px 0 white,
+    /* lower right / (upper right side for capital T like H etc letters) */ 0px
+      2px 0px white,
+    -1px 3px 0px white, -2px 4px 0px white, -3px 5px 0px white,
+    -4px 6px 0px white, -5px 7px 0px white, -6px 8px 0px white,
+    -7px 9px 0px white, -8px 10px 0px white, -9px 11px 0px white,
+    -10px 12px 0px white, -11px 13px 0px white, -12px 14px 0px white,
+    -13px 15px 0px white, -14px 16px 0px white, -15px 17px 0px white;
+}
+
+/* special class */
+.hero {
+  height: 85vh;
+}
+.background-image {
+  background-image: url("../public/bg-vector.svg");
+  background-position: center;
+  background-size: cover;
+
+  height: 190vh;
+}
+.button-prime {
+  display: flex;
+  justify-content: center;
+  background-color: #251e0b;
+
+  border: 2px solid #feb901;
+
+  @apply py-1.5 md:py-2 lg:py-2.5 px-5 rounded-full;
+}
+
+.buttton-secondary {
+  background-color: #181818;
+  color: #feb901;
+  border: 2px solid #ffffff;
+  @apply py-1.5 md:py-2 lg:py-2.5 px-5 rounded-full;
+}
+.button-third {
+  background-color: #251e0b;
+  color: #feb901;
+  border: 2px solid #feb901;
+  @apply py-1.5 md:py-2 lg:py-2.5 px-5 rounded-full;
+  font-weight: 600;
+}
+.button-third:hover {
+  background-color: #feb901;
+  color: #251e0b;
+}
+.button-forth {
+  background-color: #feb901;
+  color: #251e0b;
+  border: 2px solid #feb901;
+  @apply py-1.5 md:py-2 lg:py-2.5 px-6 rounded-full;
+  font-weight: 600;
+}
+.button-forth:hover {
+  background-color: #251e0b;
+  color: #feb901;
+}
+.techButton {
+  background-color: #ecebe7;
+  color: black;
+  border: 2px solid #ecebe7;
+  @apply py-1.5 md:py-2 lg:py-2.5 px-6 rounded-full;
+}
+#signature {
+  stroke-dasharray: 899;
+}
+/* experience */
+.experiecnce-card {
+  background: #251e0b;
+  border-radius: 16px;
+  box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4.3px);
+  -webkit-backdrop-filter: blur(4.3px);
+  border: 1px solid rgba(255, 255, 255, 0.46);
+}
+.octagon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: #ffffff; /* Background color of the octagon */
+  clip-path: polygon(
+    50% 0%,
+    85% 15%,
+    100% 50%,
+    85% 85%,
+    50% 100%,
+    15% 85%,
+    0% 50%,
+    15% 15%,
+    50% 0%,
+    50% 0%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.3);
+}
+.octagon:hover {
+  .tech-icon {
+    scale: 1;
+  }
+}
+
+.icon-container {
+  font-size: 24px; /* Adjust size of the icon */
+  color: white; /* Icon color */
+}
+/* project */
+.project-btn {
+  color: white;
+  border: 2px solid #ecebe7;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  font-size: 20px;
+
+  @apply py-1.5 md:py-2 lg:py-2.5 px-6 rounded-full bg-opacity-20 font-bold;
+}
+/* contact section */
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  background-color: #feb901;
+
+  border: 2px solid #251e0b;
+
+  @apply py-3.5 md:py-2 lg:py-2.5 px-7 rounded-full;
+}
+
+
+/* scroll bar */
+/* Scrollbar track */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background-color: #feb901; /* Golden yellow color */
+  border-radius: 10px;
+  border: 3px solid #fff; /* White border around the thumb */
+}
+
+/* Scrollbar on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e29b01; /* Slightly darker golden color on hover */
+}
+
+/* Optional: Style for scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Light grey background for the track */
+  border-radius: 10px;
+}
+
+/* commaon class */
+body {
+  background-color: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.alg-prime {
+  color: var(--primary);
+}
+
+.alg-h1 {
+  font-size: var(--h1-lg);
+}
+.alg-p {
+  font-size: var(--p-lg);
+}
+
+@media screen and (max-width: 768px) {
+  .alg-h1 {
+    font-size: var(--h1-md);
+  }
+  .alg-p {
+    font-size: var(--p-md);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .alg-h1 {
+    font-size: var(--h1-sm);
+  }
+  .alg-p {
+    font-size: var(--p-sm);
+  }
+}
