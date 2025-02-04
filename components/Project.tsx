@@ -70,7 +70,7 @@ const project = [
       "Css",
       "JavaScript",
       "Figma",
-      "CPanel",
+      "CPannel",
       "Bootstrap",
      
     ],
