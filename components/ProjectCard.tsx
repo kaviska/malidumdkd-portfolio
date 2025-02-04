@@ -12,7 +12,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const modalStyle = {
-  position: "absolute" as "absolute",
+  position: "absolute",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
@@ -31,7 +31,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   Technology,
   details,
   link,
-  color,
+  
 }) => {
   const [open, setOpen] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
