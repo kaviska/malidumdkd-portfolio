@@ -18,15 +18,16 @@ const Hero = () => {
       /> */}
 
 <Typewriter
-        options={{
-          strings: ['Kaviska Dishan', 'Web Developer'],
-          autoStart: true,
-          loop: true,
-          delay: 100, // Typing speed in milliseconds
-          pauseFor: 10000, // Pause duration after each string in milliseconds
-          backSpeed: 50, // Speed of backspacing (deletion)
-        }}
-      />
+  onInit={(typewriter) => {
+    typewriter
+      .typeString("Kaviska Dishan")
+      .pauseFor(10000) // Pause for 10 seconds
+      .deleteAll()
+      .typeString("Web Developer")
+      .pauseFor(10000) // Pause again
+      .start();
+  }}
+/>
       
     </span>
           {/* <span className="alg-prime alg-p"> Kaviska Dilshan</span> */}
