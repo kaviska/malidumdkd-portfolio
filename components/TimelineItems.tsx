@@ -57,7 +57,7 @@ const TimelineItems: React.FC<TimelineProps> = ({
         </TimelineDot>
         <TimelineConnector sx={{ width: '3px', backgroundColor: 'grey' }} />
       </TimelineSeparator>
-      <TimelineContent position="left">
+      <TimelineContent>
         <div
           ref={timelineRef}
           className="experiecnce-card px-6 py-3 text-white font-thin"
