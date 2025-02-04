@@ -40,7 +40,15 @@ const styLeObject = {
 };
 
 
-const inputFields = [
+type TextFieldVariant = "filled" | "outlined" | "standard";
+
+const inputFields: {
+  label: string;
+  variant: TextFieldVariant;
+  styleObject: typeof styLeObject;
+  multiline?: boolean;
+  rows?: number;
+}[] = [
   {
     label: "* \u00A0 Your Name",
     variant: "standard",
@@ -61,9 +69,10 @@ const inputFields = [
     variant: "standard",
     styleObject: styLeObject,
     multiline: true,
-    rows: 4, // Optional: for textarea-like input
+    rows: 4,
   },
 ];
+
 
 const ContactUs = () => {
   return (
