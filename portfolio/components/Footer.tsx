@@ -2,7 +2,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <div className="flex flex-col justify-center items-center mt-[300px]">
+    <div className="flex flex-col justify-center items-center  alg-p">
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
@@ -10,6 +10,7 @@ export const Footer = () => {
         height="150.000000pt"
         viewBox="0 0 500.000000 150.000000"
         id="signature"
+        className="md:w-[700px] w-[350px] "
         preserveAspectRatio="xMidYMid meet"
       >
         <g

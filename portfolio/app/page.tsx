@@ -12,6 +12,7 @@ export default function Home() {
       <AboutMe></AboutMe>
       <Experience></Experience>
       <Project/>
+     
       <ContactUs/>
 
       <Footer />

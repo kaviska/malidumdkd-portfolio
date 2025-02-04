@@ -1,43 +1,121 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import Tech from "./Tech";
+import Typewriter from "typewriter-effect";
+import gsap from "gsap"; // Ensure gsap is imported
 
 const AboutMe = () => {
-  return (
-    <div className="mt-[300px]">
-      <h1 className="text-center heading">About Me</h1>
-      <p className="alg-p text-white mx-10 mt-4">
-        A passionate Front End Developer with a Master&apos;s in Computer
-        Application and over 4.7 years of experience in crafting captivating
-        digital experiences. My expertise lies in leveraging cutting-edge
-        technologies such as ReactJS, NextJS, Apollo GraphQL, Redux, React
-        Query, and various UI frameworks including Material UI, NextUI, SCSS,
-        Tailwind CSS, Chakra UI, and Bootstrap. I take pride in my ability to
-        design seamless user interfaces and components that align perfectly with
-        the intended aesthetic, creating responsive websites that adapt
-        gracefully to any device. My skill set also extends to proficient API
-        integration, ensuring the seamless flow of data between the front end
-        and back end. In addition, I am known for writing clean, well-structured
-        code that not only functions flawlessly but also enhances the overall
-        maintainability of projects. With a track record of contributing to
-        well-known products like CricTracker, SportsBuzz, and Epiko Market, I am
-        committed to pushing the boundaries of web development to deliver
-        exceptional digital solutions.
-      </p>
-      <div className="flex flex-wrap mx-10 mt-5 gap-5 justify-center">
-        <Tech tech="Next" className="  "></Tech>
-        <Tech tech="React" className=" "></Tech>
-        <Tech tech="Laravel" className=" "></Tech>
-        <Tech tech="Bootstrap" className=" "></Tech>
-        <Tech tech="Tailwind" className=" "></Tech>
+  const [isClient, setIsClient] = useState(false);
 
-        <Tech tech="Next" className="  "></Tech>
-        <Tech tech="React" className=" "></Tech>
-        <Tech tech="Laravel" className=""></Tech>
-        <Tech
-          tech="Bootstrap"
-          className=" right-[22%] top-[65%]"
-        ></Tech>
-        <Tech tech="Tailwind" className=" right-[30%] top-[80%]"></Tech>
+  // Ensure the component is rendered only on the client
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  useEffect(() => {
+    if (isClient) {
+      gsap.fromTo(
+        ".about-me-paragraph", // Target element
+        { opacity: 0.5 }, // Optional: start invisible
+        {
+          opacity: 1, // Fully visible
+          scrollTrigger: {
+            trigger: ".about-me",
+            start: "top 10px",
+            end: "top 80px",
+
+            scrub: 1,
+          },
+          duration: 5, // Control animation time
+          ease: "power3.out", // Smooth easing
+        }
+      );
+    }
+  }, [isClient]);
+
+  const [showAllTech, setShowAllTech] = useState(false);
+
+  const handleToggle = () => {
+    setShowAllTech((prev) => !prev);
+  };
+
+  const techItems = [
+    "Next",
+    "React",
+    "Laravel",
+    "Bootstrap",
+    "Tailwind",
+    "Wordpress",
+    "Flutter",
+    "MUI",
+    "Woocommerce",
+    "Redux",
+  ];
+
+  return (
+    <div className="md:mt-[520px] about-me" id="about">
+      <h1 className="text-center heading mt-12">
+        {isClient && (
+          <Typewriter
+            options={{
+              strings: ["About Me"],
+              autoStart: true,
+              loop: true,
+              delay: 200, // Typing speed in milliseconds
+              cursor: "|", // Customize the cursor style
+            }}
+          />
+        )}
+      </h1>
+      <p className="alg-p text-white mx-10 mt-12 text-balance about-me-paragraph">
+        I am a passionate and driven web developer and mobile app expert,
+        currently pursuing a BSc Hons in Information Technology at the
+        University of Moratuwa, where I am in my second year. Alongside my
+        academic journey, I contribute to Algorwrite Software Solution, where I
+        specialize in web development, particularly in crafting high-performance
+        static websites, dynamic e-commerce platforms, site management
+        solutions, and custom web applications. I also possess strong expertise
+        in mobile app development, blending innovative design with seamless
+        functionality to deliver highly engaging user experiences. With a robust
+        foundation in both front-end and back-end technologies, I am dedicated
+        to creating high-quality, user-centric solutions that drive positive
+        business outcomes and enhance user satisfaction. My goal is to continue
+        evolving as a developer and contribute meaningful, impactful work to the
+        tech industry
+      </p>
+      {/* Tech Items */}
+      <div className="flex flex-wrap mx-10 mt-5 gap-5 justify-center transition-all duration-500">
+        {/* For large screens, show all tech items */}
+        <div className="hidden md:flex flex-wrap gap-5 justify-center">
+          {techItems.map((tech, index) => (
+            <Tech
+              key={index}
+              tech={tech}
+              className="transition-opacity duration-500 about-me-paragraph"
+            />
+          ))}
+        </div>
+        {/* For small screens, conditionally render */}
+        <div className="flex md:hidden flex-wrap gap-5 justify-center">
+          {techItems
+            .slice(0, showAllTech ? undefined : 2)
+            .map((tech, index) => (
+              <Tech
+                key={index}
+                tech={tech}
+                className="transition-opacity duration-500"
+              />
+            ))}
+        </div>
+      </div>
+      {/* Button visible only on small screens */}
+      <div className="md:hidden">
+        <button
+          onClick={handleToggle}
+          className="py-1.5 md:py-2 lg:py-2.5 px-5 rounded-full mx-auto block mt-3 bg-[#feb901] text-white  transition-all"
+        >
+          {showAllTech ? "Show Less" : "View More"}
+        </button>
       </div>
     </div>
   );

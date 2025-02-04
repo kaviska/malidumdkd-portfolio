@@ -1,14 +1,17 @@
 "use client";
 import React, { useState } from "react";
+import { Link } from "react-scroll"; // Import Link from react-scroll
+import Image from "next/image";
 import hamburger from "../public/hamburger.svg";
 import closeIcon from "../public/hamburger.svg"; // Add a close icon for mobile menu toggle
-import Image from "next/image";
+import logo from "../public/logo.png"; // Add a close icon for mobile menu toggle
+
 
 const NavBarLinks = [
-  { id: 1, name: "Home", href: "#home", active: true },
-  { id: 2, name: "About", href: "#about", active: false },
-  { id: 3, name: "Projects", href: "#projects", active: false },
-  { id: 4, name: "Contact", href: "#contact", active: false },
+  { id: 1, name: "Home", href: "home" },
+  { id: 2, name: "About", href: "about" },
+  { id: 3, name: "Projects", href: "projects" },
+  { id: 4, name: "Contact", href: "contact" },
 ];
 
 const NavBar = () => {
@@ -19,12 +22,16 @@ const NavBar = () => {
   };
 
   return (
-    
-    <nav className=" mt-5  w-full ">
-      {/* <Image alt="f" src={'../public/download.svg'} width={55} height={9}></Image> */}
-      <div className="flex items-center justify-between px-5 pt-4 md:px-10">
-        <div className="text-2xl font-semibold text-blue-600">
-          MY LOGO
+    <nav className="mt-5 w-full">
+      <div className="flex items-center justify-between px-5 pt-0 md:px-10">
+        <div className="">
+        <Image
+            alt="ham-icon"
+            src={logo}
+            width={140}
+            className="cursor-pointer"
+          
+          />
         </div>
         <div className="md:hidden">
           <Image
@@ -40,13 +47,15 @@ const NavBar = () => {
         <ul className="hidden md:flex space-x-8 text-white">
           {NavBarLinks.map((link) => (
             <li key={link.id}>
-              <a
-                href={link.href}
-                className="text-white alg-p"
-                
+              <Link
+                to={link.href}
+                smooth={true}
+                duration={500}
+                offset={-70} // Adjust this based on your header height
+                className="cursor-pointer alg-p text-white hover:text-blue-400"
               >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -58,13 +67,16 @@ const NavBar = () => {
           <ul className="flex flex-col items-center py-4 space-y-4">
             {NavBarLinks.map((link) => (
               <li key={link.id}>
-                <a
-                  href={link.href}
-                  className="text-gray-700 hover:text-blue-500"
+                <Link
+                  to={link.href}
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                  className="cursor-pointer text-gray-700 hover:text-blue-500"
                   onClick={toggleMobileMenu}
                 >
                   {link.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

@@ -7,7 +7,7 @@ const Tech = ({tech,className}:TechProps) => {
     <div>
         <button className={`techButton alg-p ${className}`
         }>
-            <Image src={`/${tech}.svg`} alt='techContent' className='inline mr-5' width={40} height={40}></Image>
+            <Image src={`/${tech}.svg`} alt='techContent' className='inline md:mr-5 mr-2 md:w-9 w-5' width={40} height={40}></Image>
 
             {tech}
 

@@ -7,6 +7,7 @@ import  AboutMe  from "./AboutMe";
 import Experience from "./Experience";
 import Project from "./Project";
 import ContactUs from "./ContactUs";
+import ProjectNew from "./ProjectNew";  
 
 export { 
     NavBar,
@@ -18,4 +19,5 @@ export {
     Experience,
     Project,
     ContactUs,
+    ProjectNew,
  };
