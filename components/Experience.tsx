@@ -96,13 +96,13 @@ const Experience = () => {
       <Technology icon="Elementor" />
       <Technology icon="Laravel" />
 
-      <Technology icon="java" />
+      <Technology icon="Java" />
       <Technology icon="JavaScript" />
-      <Technology icon="Next-js" />
+      <Technology icon="Next" />
       <Technology icon="Php" />
-      <Technology icon="redux" />
+      <Technology icon="Redux" />
 
-      <Technology icon="css" />
+      <Technology icon="Css" />
       <Technology icon="Wordpress" />
       <Technology icon="VS" />
       <Technology icon="Angular" />
