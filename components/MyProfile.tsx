@@ -93,7 +93,7 @@ const MyProfile = () => {
               className="absolute  profile-move-two  right-[24%] top-[35%]"
             ></Tech>
             <Tech
-              tech="php"
+              tech="Php"
               className="absolute  profile-move-two  right-[16%] top-[50%]"
             ></Tech>
             <Tech
