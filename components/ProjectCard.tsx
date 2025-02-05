@@ -72,7 +72,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   <Image
     src={image}
     alt="sample"
-    className="rounded-[32px] object-cover md:w-full w-[92%] h-full "
+    className="rounded-[32px] object-cover md:w-full w-[98%] h-full "
     width={900}
     height={600}
   />
