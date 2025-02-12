@@ -25,6 +25,24 @@ const project = [
     details:"Greet & Meeting is a platform that allows users to book parking spaces at airports. The platform is built using Html,PHP, and Stripe. The platform also has an admin panel that allows the admin to manage bookings and parking spaces.",
   },
   {
+    image:'/e-commerce-img.avif',
+    name: "Clothing Website",
+    workedOn: ["Frontend", "Backend", "Admin"],
+    Technology: [
+      "Next",
+      "Css",
+      "Tailwind",
+      "Redux",
+      "MUI",
+      "React"
+    
+    ],
+    color:'#0084ea',
+    link: "https://next-e-commerce-neon.vercel.app/",
+    details:"E commerce website that make for learning purpose refernce get from github repo.",
+  },
+  
+  {
     image:'/dadTravel.png',
     name: "Managment Pannel",
     workedOn: ["Frontend", "Backend", "Admin"],
