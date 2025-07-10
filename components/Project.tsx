@@ -4,148 +4,178 @@ import React from "react";
 import ProjectCard from "./ProjectCard";  
 import Typewriter from 'typewriter-effect';
 
-//import Contact from './Earth'
-
 const project = [
   {
-    image:'/Meet&Greet.png',
-    name: "Greet & Meeting",
-    workedOn: ["Frontend", "Backend", "Admin"],
-    Technology: [
-      "Html",
-      "Css",
-      "Bootstrap",
-      "Php",
-      "Stripe",
-      "MySql"
-    
-    ],
-    color:'#0084ea',
-    link: "https://parking.yourmeetandgreetservice.co.uk/",
-    details:"Greet & Meeting is a platform that allows users to book parking spaces at airports. The platform is built using Html,PHP, and Stripe. The platform also has an admin panel that allows the admin to manage bookings and parking spaces.",
-  },
-  {
-    image:'/e-commerce-img.avif',
-    name: "Clothing Website",
+    image:'/groccery.svg',
+    name: "POS System",
     workedOn: ["Frontend", "Backend", "Admin"],
     Technology: [
       "Next",
-      "Css",
+      "React",
       "Tailwind",
-      "Redux",
-      "MUI",
-      "React"
-    
+     
+      "MySql",
+      "github"
     ],
-    color:'#0084ea',
-    link: "https://next-e-commerce-neon.vercel.app/",
-    details:"E commerce website that make for learning purpose refernce get from github repo.",
+    color:'#10B981',
+    link: "https://temp-pos.vercel.app",
+    details:"A comprehensive web-based Point of Sale system with admin dashboard. Features include inventory management, sales tracking, and user authentication. Login with admin@example.com / password for demo access.",
   },
-  
   {
-    image:'/dadTravel.png',
-    name: "Managment Pannel",
-    workedOn: ["Frontend", "Backend", "Admin"],
+    image:'/resturant.avif',
+    name: "Restaurant POS System",
+    workedOn: ["Frontend", "Backend", "Multi-Role System"],
     Technology: [
       "Laravel",
-      "Metronic",
-      "Bootstrap",
-      'Css',
-     
-      "Vue",
-      "MySql",
+      "MySQL",
+      "Tailwind",
+      "React",
+      "Redux",
+      "MUI"
     ],
-    color:'#0084ea',
-
-    link: "",
-    details:"Greet & Meeting is a platform that allows users to book parking spaces at airports. The platform is built using React, Node.js, and Stripe. The platform also has an admin panel that allows the admin to manage bookings and parking spaces.",
+    color:'#F59E0B',
+    link: "https://white-octopus-933718.hostingersite.com",
+    details:"Multi-role restaurant POS system with separate access for Admin, Kitchen, Cashier, and Waiter. Features role-based permissions, order management, kitchen display system, and real-time updates.",
   },
   {
-    image:'/cheer.jpg',
-    name: "Cheerleaders Pannel",
-    workedOn: ["Frontend Home Page"],
+    image:'/groccery.svg',
+    name: "Japanese E-Commerce",
+    workedOn: ["Frontend", "Backend", "Payment Integration"],
     Technology: [
-      "Wordpress",
-      "Elementor",
-      "Css",
-      "Html",
-      "CPannel",
-      "Figma",
+     "Laravel",
+      "MySQL",
+      "Tailwind",
+      "React",
+      "Redux",
+      "MUI"
+    ],
+    color:'#DC2626',
+    link: "https://iymart.jp/",
+    details:"A comprehensive Japanese e-commerce platform built with WooCommerce. Features include multi-language support, Japanese payment gateways, and custom product catalog management.",
+  },
+  {
+    image:'/car.webp',
+    name: "Japanese Car Sales",
+    workedOn: ["Frontend", "Backend", "Admin Panel"],
+    Technology: [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "Bootstrap",
+      "CSS",
+      "JavaScript"
+    ],
+    color:'#3B82F6',
+    link: "https://nipponcars.jp/",
+    details:"Japanese car dealership website with advanced search filters, car listings management, and inquiry system. Features include vehicle comparison, detailed specifications, and contact forms.",
+  },
+  {
+    image:'/instragram.jpg',
+    name: "Instagram Downloader Tool",
+    workedOn: ["Frontend", "Backend", "API Integration"],
+    Technology: [
+      "Next",
+      "React",
+      "MUI",
       
+      "Tailwind",
+      "github"
     ],
-    color:'#0084ea',
-    details:"Cheerleaders Pannel is a platform designed for managing cheerleading teams and events. The platform is built using React and Node.js. Note: I only developed the home page for this project",
-
-
-    link: "https://eecheer.com/",
+    color:'#E91E63',
+    link: "https://savefrominsta.app/",
+    details:"A web tool for downloading Instagram content including photos, videos, and stories. Built with Next.js and features a clean, user-friendly interface with fast download capabilities.",
   },
   {
-    image:'/Mobile-App.jpg',
-    name: "App Promotion Website",
-    workedOn: ["Frontend", "Backend", "Admin"],
+    image:'/Meet&Greet.png',
+    name: "Parking Booking System",
+    workedOn: ["Frontend", "Backend", "Payment Integration"],
     Technology: [
-      "Html",
-      "Css",
-      "JavaScript",
-      "Figma",
-      "CPannel",
+      "HTML",
+      "CSS",
       "Bootstrap",
-     
+      "PHP",
+      "Stripe",
+      "MySQL"
     ],
     color:'#0084ea',
-    details:"A application to promote mobile applications. Built for patrice purpose to html,css,js refering the youtube video ",
-    link: "http://appprofile.infinityfreeapp.com/?i=1",
+    link: "https://parking.yourmeetandgreetservice.co.uk/",
+    details:"Airport parking booking platform with Stripe payment integration. Features include real-time availability, booking management, and automated confirmation emails.",
   },
   {
     image:'/e-commerce-img.avif',
-    name: "E Commerce Platform",
-    workedOn: ["Frontend", "Backend", "Admin"],
+    name: "Next.js E-Commerce",
+    workedOn: ["Frontend", "Backend", "State Management"],
     Technology: [
-      "Wordpress",
-      "Woocommerce",
-      "Php",
-      "Elementor",
-      "Css",
-      "Figma",
-      
+      "Laravel",
+      "React",
+      "Tailwind",
+      "Redux",
+      "MUI",
+      "github"
     ],
-    color:'#0084ea',
-    details:"This is application make with algowrite software solution . One of team member of this project",
-    link: "https://www.bobby.lk/",
+    color:'#8B5CF6',
+    link: "https://next-e-commerce-neon.vercel.app/",
+    details:"Modern e-commerce website built with Next.js featuring product catalog, shopping cart, user authentication, and responsive design. Includes Redux for state management and Material-UI components.",
+  },
+  {
+    image:'/cheer.jpg',
+    name: "Food & Cheer Brand",
+    workedOn: ["Frontend Design", "WordPress Development"],
+    Technology: [
+      "WordPress",
+      "Elementor",
+      "CSS",
+      "HTML",
+      "Figma",
+      "JavaScript"
+    ],
+    color:'#F97316',
+    link: "https://eecheer.com/",
+    details:"Brand website for a food and cheerleading company. Features modern design, responsive layout, and custom WordPress theme development with Elementor page builder.",
   }
-
 ];
 
 const Project = () => {
   return (
-    <div id="projects">
-      <h1 className="heading my-12">
-      <Typewriter
-            options={{
-              strings: ['PROJECTS'],
-              autoStart: true,
-              loop: true,
-              delay: 200, // Typing speed in millisecondsu
-              cursor: '|', // Customize the cursor style
-            }}
-          />
-      </h1>
-      <div>
-        {project.map((project, index) => (
-          <ProjectCard
-            key={index}
-            image={project.image}
-            name={project.name}
-            workedOn={project.workedOn}
-            Technology={project.Technology}
-            details={project.details}
-            link={project.link}
-            color={project.color}
-          />
-        ))}
+    <section id="projects" className="py-16 md:py-24 bg-gradient-to-b from-transparent to-black/10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h1 className="heading text-4xl md:text-6xl font-bold mb-4">
+            <Typewriter
+              options={{
+                strings: ['MY PROJECTS', 'RECENT WORK', 'PORTFOLIO'],
+                autoStart: true,
+                loop: true,
+                delay: 150,
+                deleteSpeed: 50,
+                cursor: '|',
+              }}
+            />
+          </h1>
+          <p className="text-white/70 text-lg md:text-xl max-w-2xl mx-auto">
+            Explore my recent projects showcasing expertise in web development, mobile applications, and SaaS solutions.
+          </p>
+        </div>
+
+        {/* Projects Grid */}
+        <div className="space-y-8 md:space-y-12">
+          {project.map((projectItem, index) => (
+            <ProjectCard
+              key={index}
+              image={projectItem.image}
+              name={projectItem.name}
+              workedOn={projectItem.workedOn}
+              Technology={projectItem.Technology}
+              details={projectItem.details}
+              link={projectItem.link}
+              color={projectItem.color}
+              index={index}
+            />
+          ))}
+        </div>
       </div>
-   
-    </div>
+    </section>
   );
 };
 
