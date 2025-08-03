@@ -27,7 +27,7 @@ const project = [
     workedOn: ["Frontend", "Backend", "Multi-Role System"],
     Technology: [
       "Laravel",
-      "MySQL",
+    
       "Tailwind",
       "React",
       "Redux",
@@ -43,7 +43,7 @@ const project = [
     workedOn: ["Frontend", "Backend", "Payment Integration"],
     Technology: [
      "Laravel",
-      "MySQL",
+      
       "Tailwind",
       "React",
       "Redux",
@@ -60,7 +60,7 @@ const project = [
     Technology: [
       "Laravel",
       "PHP",
-      "MySQL",
+      
       "Bootstrap",
       "CSS",
       "JavaScript"
@@ -90,12 +90,12 @@ const project = [
     name: "Parking Booking System",
     workedOn: ["Frontend", "Backend", "Payment Integration"],
     Technology: [
-      "HTML",
-      "CSS",
+      "Html",
+      "Css",
       "Bootstrap",
-      "PHP",
+      "Php",
       "Stripe",
-      "MySQL"
+      
     ],
     color:'#0084ea',
     link: "https://parking.yourmeetandgreetservice.co.uk/",
@@ -122,10 +122,10 @@ const project = [
     name: "Food & Cheer Brand",
     workedOn: ["Frontend Design", "WordPress Development"],
     Technology: [
-      "WordPress",
+      "Wordpress",
       "Elementor",
-      "CSS",
-      "HTML",
+      "Css",
+      "Html",
       "Figma",
       "JavaScript"
     ],
