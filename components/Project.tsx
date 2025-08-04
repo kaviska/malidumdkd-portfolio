@@ -131,7 +131,7 @@ const project = [
     ],
     color:'#F97316',
     link: "https://eecheer.com/",
-    details:"Brand website for a food and cheerleading company. Features modern design, responsive layout, and custom WordPress theme development with Elementor page builder.",
+    details:"Brand website for a food and cheerleading company. Features are modern design, responsive layout, and custom WordPress theme development with Elementor page builder.",
   }
 ];
 
