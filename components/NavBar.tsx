@@ -11,6 +11,7 @@ const NavBarLinks = [
   { id: 3, name: "Projects", href: "#projects" },
   { id: 4, name: "Contact", href: "#contact" },
 ];
+// simple coment
 
 const NavBar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
