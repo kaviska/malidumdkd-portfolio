@@ -59,7 +59,7 @@ const project = [
     workedOn: ["Frontend", "Backend", "Admin Panel"],
     Technology: [
       "Laravel",
-      "PHP",
+      "Php",
       
       "Bootstrap",
       "Css",
