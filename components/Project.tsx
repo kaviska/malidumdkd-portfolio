@@ -4,6 +4,8 @@ import React from "react";
 import ProjectCard from "./ProjectCard";  
 import Typewriter from 'typewriter-effect';
 
+// ca
+
 const project = [
   {
     image:'/groccery.svg',
