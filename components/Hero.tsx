@@ -57,7 +57,7 @@ const Hero = () => {
           title="Download CV"
           className="alg-p alg-prime mt-4 button-third"
           icon="download"
-          iconTwo="download-white"
+         
           ></Button>
           <Button
           title="Hire Me"
