@@ -62,7 +62,7 @@ const project = [
       "PHP",
       
       "Bootstrap",
-      "CSS",
+      "Css",
       "JavaScript"
     ],
     color:'#3B82F6',
